@@ -1,0 +1,700 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+.triaset {
+  float: left;
+  padding-right: 200px;
+  padding-left: 1 0px;
+  z-index: 3;
+  position: absolute;
+  margin-left: 0;
+  /* background-color: lime; */
+}
+
+#triaset {
+  display: flex;
+  color: red;
+  float: left;
+  background-color: #f9f9f9;
+  border-width: 0;
+  padding-left: 10px;
+  /* font-size: 50px; */
+  cursor: pointer;
+  padding-top: 5px;
+  margin-left: 40px;
+  height: 70px;
+  width: 0;
+  outline: 0;
+  font-family: garamond;
+  padding-right: 200px;
+
+}
+
+#favicon {
+
+  height: 70px;
+  width: 150px;
+  margin-right: 200px;
+  /* border: black; */
+  /* background-color: green; */
+}
+
+header {
+padding: 0px;
+display: flex;
+display: flex;
+position: fixed;
+/* background-color: white; */
+width: 100%;
+border-bottom: 1px solid #999999;
+height: 68px;
+padding: 0px 0px 3px 0px;
+background: white;
+background-color: #f9f9f9;
+}
+
+
+.navbar1 {
+  background-color: #f9f9f9;
+  height: 0px;
+  margin-top: 20px;
+  padding-left: 40%;
+  width: 100%;
+  font-size: 14.5px;
+
+}
+
+.navbar1:hover {
+  width: 100%;
+  height: 280px;
+  border-bottom: 1px solid #999999;
+  /* background-color: yellow; */
+}
+
+.navbar1 ul {
+  display: inline-block;
+  /* background-color: gray; */
+  height: 10px;
+  margin-top: 13px;;
+  padding-left: 0px;
+  padding-right: 0px;
+  /* padding-top: 12px; */
+  /* width: 20%; */
+
+
+}
+
+.navbar1 ul li {
+  list-style-type:none;
+  /* background-color: pink; */
+  width: 160px;
+  padding-bottom: 5px;
+  visibility: hidden;
+  padding-top: 45px;
+  /* margin-left: 10px; */
+  /* margin-top: 12px; */
+  /* height: 30px; */
+
+}
+
+.navbar1 ul:hover > li {
+  visibility: visible;
+  display: block;
+}
+
+
+#hidden {
+  visibility: hidden;
+
+}
+
+#visible {
+  visibility: visible;
+  display: list-item;
+  padding-bottom: 40px;
+  padding-top: 0;
+  height: 0;
+  /* margin-right: -50px; */
+}
+
+#visible:hover {
+  text-decoration: underline;
+
+}
+
+@media screen and (max-width: 600px) {
+  #triaset {
+    font-size: 30px;
+    padding-top: 10px;
+    margin-left: 5px;
+  }
+
+  #favicon {
+    height: 55px;
+    width: 105px;
+  }
+}
+
+
+
+
+
+.button {
+  position: absolute;
+  display: flex;
+  margin-left: 83%;
+  padding: 0px;
+  background-color: blue;
+  margin-top: 22px;
+}
+
+#contact {
+  border: solid 1px red;
+  cursor: pointer;
+  background-color: white;
+  height: 37px;
+  color: red;
+  outline: 0;
+  box-shadow: 1px 1px 5px 1px grey;
+  float: left;
+
+}
+
+#contact:hover {
+  border: solid 1px red;
+  background-color: red;
+  color: white;
+  box-shadow: 0.5px 0.5px 5px 0.5px grey;
+
+}
+
+#contact spam {
+  padding: 0px 40px 0px 40px;
+}
+
+@media screen and (max-width: 1100px) {
+  .button {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1100px) {
+  .navbar1 , #button1 {
+    display: none;
+  }
+
+}
+
+.navbar2 {
+  display: none;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .navbar2 {
+    display: none;
+    position: absolute;
+    padding-top: 70px;
+    text-align: center;
+    margin: auto;
+    /* background-color: yellow; */
+    width: 100%;
+  }
+
+ a {
+    color: #333;
+    font-family: sans-serif;
+    font-size: 13px;
+  }
+
+  a:active {
+    text-decoration: none;
+    color: #333;
+  }
+
+  a:hover {
+    color: #666;
+  }
+
+
+  header:hover > .navbar2 {
+    display: block;
+  }
+
+  header:hover {
+    height: 470px;
+  }
+
+  .navbar2 ul {
+    display: block;
+    /* background-color: red; */
+    padding: 0;
+  }
+
+  .navbar2 ul li {
+    display: block;
+    padding-bottom: 10px;
+    /* background-color: skyblue; */
+    padding-left: 0;
+  }
+
+  .navbar2 ul li ul {
+    padding-left: 0;
+  }
+
+
+  #title2 {
+    visibility: visible;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: block;
+    /* background-color: green; */
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+  }
+
+  #title2:hover {
+    text-decoration: underline;
+  }
+
+  .navbar2 ul li ul li {
+    display: none;
+  }
+
+  #title2:hover + li {
+    visibility: visible;
+    display: block;
+  }
+
+  .navbar2 ul li ul:hover > li {
+    visibility: visible;
+    display: block;
+  }
+
+  .navbar2 .button {
+    position: relative;
+    display: inline-block;
+    margin-left: inherit;
+    /* background-color: blue; */
+    margin-left: 0px;
+  }
+
+
+}
+
+
+.ojan1  {
+  background-image: url(home-hero2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  background-repeat: no-repeat;
+  height: 690px;
+  border-width: 0;
+  margin: 0;
+
+}
+
+@media screen and (max-width: 600px) {
+  .ojan1 {
+    height: 450px;
+  }
+
+}
+
+
+.ojan1 h1 {
+  float: right;
+  padding: 150px 20% 0px 0;
+  margin-left: 90%;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 68px;
+  /* background-color: green; */
+
+}
+
+@media screen and (max-width: 600px) {
+  .ojan1 h1 {
+    padding: 150px 0 0 0;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    /* background-color: blue; */
+
+  }
+}
+
+h1 #your {
+  font-size: 36px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 #your {
+    font-size: 20px;
+    /* background-color: pink; */
+  }
+}
+.ojan1 h2 {
+  display: block;
+  float: right;
+  padding: 0px 20.6% 0px 0px;
+  margin-left: 90%;
+  margin-bottom: 50px;
+  color: white;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+  .ojan1 h2 {
+    width: 100%;
+    padding: 0 0 0 0;
+    text-align: center;
+    font-size: 10px;
+    margin: 0;
+    /* background-color: yellow; */
+
+  }
+}
+
+#demo {
+  padding: 15px 82px 15px 82px;
+  border: solid 5px white;
+  background: inherit;
+  font-size: 27px;
+  font-weight: bold;
+  color: white;
+  outline: 0;
+  /* background-color: pink; */
+
+}
+
+@media screen and (max-width: 600px) {
+  #demo {
+    padding: 10px 45px 10px 45px;
+    border: solid 5px white;
+    background: inherit;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    outline: 0;
+    /* background-color: purple; */
+
+  }
+}
+
+
+#demo:hover {
+  padding: 15px 70px 15px 70px;
+  border-color: white;
+  cursor: pointer;
+  border-width: 5px;
+  color: #555;
+  background-color: white;
+
+}
+
+@media screen and (max-width: 600px) {
+  #demo:hover {
+    padding: 10px 45px 10px 45px;
+    border-color: white;
+    cursor: pointer;
+    border-width: 5px;
+    color: #555;
+    background-color: white;
+
+  }
+}
+
+#demo {
+
+}
+
+.who {
+  padding: 20px 19% 0 19%;
+  margin-bottom: 0;
+  font-family: sans-serif;
+}
+
+.who p {
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+h5 {
+  margin-left: 7%;
+  padding-top: 30px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #333;
+}
+
+.line1 {
+  width: 50px;
+  margin-left: 7%;
+  height: 0px;
+}
+
+h3 {
+  text-align: inherit;
+  font-size: 35px;
+}
+
+#what {
+  margin: 10px 450px 40px 450px;
+}
+
+p {
+  font-size: 20px;
+}
+
+#learn {
+  background-color: white;
+  padding: 15px 60px 15px 60px;
+  border: solid 1px black;
+  cursor: pointer;
+  width: 270px;
+  font-size: 16px;
+  outline: 0;
+}
+
+.who > h4 {
+  margin-top: 50px;
+}
+
+#learn:hover {
+  border: solid 1px black;
+  color: gray;
+  box-shadow: 1px 1px 5px 1px grey;
+
+}
+
+
+.mountain {
+  height: 500px;
+  max-width: 100%;
+  margin-top: 0;
+  object-fit: cover;
+
+}
+
+
+#solutions {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+.bank {
+  display: grid;
+  height: inherit;
+  width:inherit;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  grid-row-gap: 0px;
+  }
+
+@media screen and (max-width: 600px) {
+  .bank {
+    display: block;
+    }
+}
+
+.bank button {
+  width: 100%;
+
+}
+
+#bank1 {
+  background-image: url(bank-treasury.jpg);
+  height: 320px;
+  font-size: 3vw;
+  font-weight: 600;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  text-align: center;
+  outline: 0;
+
+}
+
+@media screen and (max-width: 600px) {
+  #bank1 {
+    font-size: 40px;
+    }
+}
+
+#bank1:hover {
+  background-size: auto;
+}
+
+#bank2 {
+  background-image: url(corporate-treasury.jpg);
+  font-size: 3vw;
+  font-weight: 600;
+  height: 320px;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  text-align: center;
+  outline: 0;
+}
+
+@media screen and (max-width: 600px) {
+  #bank2 {
+    font-size: 40px;
+    }
+}
+
+#bank2:hover {
+  background-size: auto;
+
+}
+
+#bank3 {
+  background-image: url(investment.jpg);
+  height: 320px;
+  font-size: 3vw;
+  font-weight: 600;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  text-align: center;
+  outline: 0;
+}
+
+@media screen and (max-width: 600px) {
+  #bank3 {
+    font-size: 40px;
+    }
+}
+
+#bank3:hover {
+  background-size: auto;
+}
+
+#awards {
+  text-align: center;
+}
+
+
+.touch {
+  text-align: center;
+  background-color: #f2f2f2;
+  height: 250px;
+  padding-bottom: 60px;
+}
+
+h6 {
+  padding-top: 60px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.line2 {
+  width: 90px;
+  text-align: center;
+
+}
+
+.touch p {
+  text-align: center;
+  line-height: normal;
+  font-family: sans-serif;
+  font-size: 13px;
+  margin-left: 25%;
+  margin-right: 25%;
+  line-height: 1.8;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .touch p {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 20px;
+  }
+  h3, p {
+    text-align: center;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 0px;
+  }
+}
+
+
+.links {
+  display: inline;
+  position:
+  margin-bottom: 10%;
+  /* background-color: skyblue; */
+
+}
+
+#test {
+  display: inline;
+  padding-top: 61px;
+  /* background-color: yellow; */
+  margin-right: 20px;
+  border-radius: 50%;
+  margin-left: 20px;
+  background-color: #D0D0D0;
+
+
+}
+
+.award {
+  text-align: center;
+  padding: 20px 19% 0 19%;
+}
+
+
+.touch img {
+  padding: 20px;
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  padding-top: 30px;
+  /* background-color: #D0D0D0; */
+  /* border-radius: 100%; */
+}
+
+
+#test:hover {
+  background-color: #999;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 18px;
+  text-align: center;
+  padding-top: 400px;
+}
+
+footer, span {
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
